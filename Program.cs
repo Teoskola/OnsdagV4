@@ -1,4 +1,4 @@
-﻿using Cars;
+﻿using Uppgifter;
 
 namespace ConsoleApp1
 {
@@ -6,17 +6,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           CarClass car1 = new CarClass();
-            CarClass car2 = new CarClass();
-            car1.brand = "Toyota";
-            car1.model = "Camry";
-            car1.year = 2020;
-            car2.brand = "Honda";
-            car2.model = "Civic";
-            car2.year = 2021;
+            //Gör två instanser av CarClass dessa är objekt av klassen CarClass
+            //CarClass car1 = new CarClass();
+            // CarClass car2 = new CarClass();
 
-            car1.PrintCarInfo();
-            car2.PrintCarInfo();
+            //Sätter attributer för car1 objektet
+            // car1.brand = "Toyota";
+            // car1.model = "Camry";
+            // car1.year = 2020;
+
+            //Sätter attributer för car2 objektet
+            // car2.brand = "Honda";
+            // car2.model = "Civic";
+            // car2.year = 2021;
+
+            //Skriver ut information om car1 och car2 objektet
+            // car1.PrintCarInfo();
+            // car2.PrintCarInfo();
+
+            //Gör en instans av BankAccount klassen
+            BankAccount account = new BankAccount();
 
         }
     }

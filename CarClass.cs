@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cars
+namespace Uppgifter //Lägger alla uppgifter under namespace Uppgifter så att de kan användas i Program.cs
 {
-    public class CarClass
+    public class CarClass 
     {
+        //Attributer
+        //sätter typ av bilar attributer/variabler för bilarna
         public string brand;
         public string model;
         public int year;
 
-        public void PrintCarInfo()
+        //Metoder
+        public void PrintCarInfo() //metod som skriver ut information om bilen
         {
             Console.WriteLine($"Brand: {brand}, Model: {model}, Year: {year}");
         }
