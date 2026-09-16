@@ -10,6 +10,12 @@ namespace Uppgifter //Lägger alla uppgifter under namespace Uppgifter så att d
 
         private double balance; //privat kontobalans
 
+        //Konstruktör
+        public BankAccount() //konstruktor som sätter initialt värde på kontobalansen
+        {
+            balance = 0; //sätter initialt värde på kontobalansen till 0
+        }
+
         //Metoder
         public void Deposit(double amount)
         {
@@ -21,5 +27,9 @@ namespace Uppgifter //Lägger alla uppgifter under namespace Uppgifter så att d
 
         public void Withdraw(double amount)
         {
+            balance = balance - amount; //drar av beloppet från kontobalansen
+            Console.WriteLine($"Withdrew: {amount}, New Balance: {balance}");
         }
+
+    }
 }

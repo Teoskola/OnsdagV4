@@ -24,9 +24,12 @@ namespace ConsoleApp1
             // car1.PrintCarInfo();
             // car2.PrintCarInfo();
 
-            //Gör en instans av BankAccount klassen
+            //Gör en instans av BankAccount klassen och skapar ett objekt av klassen BankAccount
             BankAccount account = new BankAccount();
 
+            //Använder metoderna Deposit och Withdraw för att ändra saldot på kontot
+            account.Deposit(1000);
+            account.Withdraw(200);
         }
     }
 }
